@@ -4,9 +4,9 @@ Code for paper "Towards Efficient Detection and Optimal Response against Sophist
 
 ## Introduction
 
-Multiagent algorithms often aim to accurately predict the behaviors of other agents and find a best response accordingly. Previous works usually assume an opponent uses a stationary strategy or randomly switches among several stationary ones. However, an opponent may exhibit more sophisticated behaviors by adopting more advanced reasoning strategies, e.g., using a Bayesian reasoning strategy. This paper proposes a novel approach called Bayes-ToMoP which can efficiently detect the strategy of opponents using either stationary or higher-level reasoning strategies. Bayes-ToMoP also supports the detection of previously unseen policies and learning a best-response policy accordingly. We provide a theoretical guarantee of the optimality on detecting the opponent's strategies. We also propose a deep version of Bayes-ToMoP by extending Bayes-ToMoP with DRL techniques. Experimental results show both Bayes-ToMoP and deep Bayes-ToMoP outperform the state-of-the-art approaches when faced with different types of opponents in two-agent competitive games.
+Multiagent algorithms often aim to accurately predict the behaviors of other agents and find the best response accordingly. Previous works usually assume an opponent uses a stationary strategy or randomly switches among several stationary ones. However, an opponent may exhibit more sophisticated behaviors by adopting more advanced reasoning strategies, e.g., using a Bayesian reasoning strategy. This paper proposes a novel approach called Bayes-ToMoP which can efficiently detect opponents' strategies using either stationary or higher-level reasoning strategies. Bayes-ToMoP also supports detecting previously unseen policies and learning a best-response policy accordingly. We provide a theoretical guarantee of the optimality of detecting the opponent's strategies. We also propose a deep version of Bayes-ToMoP by extending Bayes-ToMoP with DRL techniques. Experimental results show both Bayes-ToMoP and deep Bayes-ToMoP outperform the state-of-the-art approaches when faced with different types of opponents in two-agent competitive games.
 
-<p align="center"><img align="center" src="..//..//..//assets/bayes-tomop.png" alt="overview" style="zoom:60%;" /></p>
+<p align="center"><img align="center" src="bayes-tomop.png" alt="overview" style="zoom:60%;" /></p>
 
 ## Training
 
@@ -24,7 +24,7 @@ run load_soccer.py
 
 ### Performance models 
 
-Performance models have been saved in file 'performance model', remember to replace the corresponding models in the root directory
+Performance models have been saved in the file 'performance model', remember to replace the corresponding models in the root directory
 
 **Directory 'models' save all pre-trained policies using DQN (see RL_brain.py)**
 
